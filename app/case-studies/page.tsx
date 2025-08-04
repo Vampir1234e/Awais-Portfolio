@@ -218,6 +218,25 @@ const blogCaseStudies = [
       "Established strong organic presence, built authority in software niche, achieved consistent traffic growth",
     isLocalSEO: false,
   },
+  {
+    title: "E-commerce Product Review Blog",
+    industry: "E-commerce / Content Marketing",
+    problem: "Low product visibility and sales due to lack of detailed, SEO-friendly reviews",
+    solution: "Developed a comprehensive product review blog with in-depth SEO analysis and conversion-focused content",
+    result:
+      "Increased organic traffic to product pages by 180%, boosted conversion rates by 25%, and improved customer trust",
+    isLocalSEO: false,
+  },
+  {
+    title: "Local Restaurant Blog & SEO",
+    industry: "Food & Beverage / Local SEO",
+    problem: "New restaurant struggling to attract local diners and establish online presence",
+    solution:
+      "Created a food blog with local recipes and dining guides, combined with aggressive local SEO for map pack rankings",
+    result:
+      "Achieved top 3 local pack rankings for key terms, 120% increase in reservation calls, and significant walk-in traffic",
+    isLocalSEO: true,
+  },
 ]
 
 const getColorClasses = (color: string) => {
