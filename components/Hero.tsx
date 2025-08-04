@@ -46,7 +46,7 @@ export default function Hero() {
             </div>
 
             {/* Trust Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8">
+            <div className="grid grid-cols-3 gap-8 pt-4">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
                 <div className="text-sm text-gray-600">Happy Clients</div>
