@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Professional SEO Specialist & Digital Growth Strategist helping businesses rank, convert & scale through data-driven strategies.",
   keywords: "SEO specialist, digital growth strategist, conversion funnels, web design, CRM automation",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

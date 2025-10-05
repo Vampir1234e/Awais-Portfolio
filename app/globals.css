@@ -1,5 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --cyber-dark: #0f172a;
@@ -12,6 +13,22 @@
   --background: #ffffff;
   --foreground: #1f2937;
   --radius: 0.625rem;
+  --ring: 186 100% 50%; /* fallback ring color (approx var(--cyber-cyan)) */
+  --input: 215 28% 17%; /* approx var(--cyber-dark) */
+  --popover: 215 28% 17%;
+  --popover-foreground: 222 100% 95%;
+  --card: 215 28% 17%;
+  --card-foreground: 222 100% 95%;
+  --primary: 178 100% 50%;
+  --primary-foreground: 215 28% 17%;
+  --secondary: 300 100% 66%;
+  --secondary-foreground: 215 28% 17%;
+  --muted: 229 34% 46%;
+  --muted-foreground: 215 28% 17%;
+  --accent: 156 100% 50%;
+  --accent-foreground: 215 28% 17%;
+  --destructive: 300 100% 66%;
+  --destructive-foreground: 215 28% 17%;
 }
 
 .dark {
@@ -27,48 +44,9 @@
   --radius: 0.625rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--cyber-dark);
-  --color-card-foreground: var(--cyber-text);
-  --color-popover: var(--cyber-dark);
-  --color-popover-foreground: var(--cyber-text);
-  --color-primary: var(--cyber-cyan);
-  --color-primary-foreground: var(--cyber-dark);
-  --color-secondary: var(--cyber-magenta);
-  --color-secondary-foreground: var(--cyber-dark);
-  --color-muted: var(--cyber-muted);
-  --color-muted-foreground: var(--cyber-dark);
-  --color-accent: var(--cyber-aqua);
-  --color-accent-foreground: var(--cyber-dark);
-  --color-destructive: var(--cyber-magenta);
-  --color-destructive-foreground: var(--cyber-dark);
-  --color-border: var(--border);
-  --color-input: var(--cyber-dark);
-  --color-ring: var(--cyber-cyan);
-  --color-chart-1: #00fff7;
-  --color-chart-2: #ff4dff;
-  --color-chart-3: #00ffa3;
-  --color-chart-4: #0f172a;
-  --color-chart-5: #e6ecff;
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--cyber-dark);
-  --color-sidebar-foreground: var(--cyber-text);
-  --color-sidebar-primary: var(--cyber-cyan);
-  --color-sidebar-primary-foreground: var(--cyber-text);
-  --color-sidebar-accent: var(--cyber-aqua);
-  --color-sidebar-accent-foreground: var(--cyber-text);
-  --color-sidebar-border: var(--border);
-  --color-sidebar-ring: var(--cyber-cyan);
-}
-
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground font-sans antialiased;
